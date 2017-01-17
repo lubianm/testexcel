@@ -3,3 +3,5 @@ Dim pippo As String
 
 Dim othervariable As Double
 
+Dim nuovo As String
+
