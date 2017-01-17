@@ -3,17 +3,17 @@ Public activeRow As Long
 Public activeCol As Long
 
 Sub copiacelle()
-Dim message As String
-If activeRow = 0 Then
-    message = "No previous cell selected"
-Else
-    message = "Previous cell was " & CStr(activeRow) & " " & CStr(activeRow)
-End If
+    Dim message As String
+    If activeRow = 0 Then
+        message = "No previous cell selected"
+    Else
+        message = "Previous cell was " & CStr(activeRow) & " " & CStr(activeRow)
+    End If
 
-MsgBox message
-activeRow = ActiveCell.Row
-activeCol = ActiveCell.Column
-MsgBox CStr(activeRow) + " " + CStr(activeCol)
+    MsgBox message
+    activeRow = ActiveCell.Row
+    activeCol = ActiveCell.Column
+    MsgBox CStr(activeRow) + " " + CStr(activeCol)
 
 Dim currValue As String
 currValue = ActiveSheet.Cells(activeRow, activeCol).Value
